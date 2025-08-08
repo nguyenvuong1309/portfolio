@@ -1,4 +1,5 @@
 import About from "@/components/about";
+import Blogs from "@/components/blogs";
 import Contact from "@/components/contact";
 import Experience from "@/components/experience";
 import Intro from "@/components/intro";
@@ -15,6 +16,11 @@ export default function Home() {
       <Projects />
       <Skills />
       <Experience />
+      <main className="relative bg-black-100 flex justify-center items-center flex-col overflow-hidden mx-auto sm:px-10 px-5">
+        <div className="max-w-7xl w-full">
+          <Blogs />
+        </div>
+      </main>
       <Contact />
     </main>
   );

@@ -27,7 +27,7 @@ export const sendEmail = async (formData: FormData) => {
   try {
     data = await resend.emails.send({
       from: "Contact Form <onboarding@resend.dev>",
-      to: "bytegrad@gmail.com",
+      to: "nguyenducvuong13092003@gmail.com",
       subject: "Message from contact form",
       replyTo: senderEmail,
       react: React.createElement(ContactFormEmail, {
@@ -35,7 +35,9 @@ export const sendEmail = async (formData: FormData) => {
         senderEmail: senderEmail,
       }),
     });
+    console.log("🚀 ~ file: sendEmail.ts:29 ~ data:", data);
   } catch (error: unknown) {
+    console.log("🚀 ~ file: sendEmail.ts:39 ~ error:", error);
     return {
       error: getErrorMessage(error),
     };
