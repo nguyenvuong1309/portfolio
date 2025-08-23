@@ -107,33 +107,29 @@ export const projects = [
 export const testimonials = [
   {
     quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
+      "Automate Flutter CI/CD Pipeline for Build and Distribution with Firebase App Distribution",
     name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
+    title: "https://github.com/nguyenvuong1309/Blog/discussions/14",
   },
   {
-    quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
+    quote: "Hướng dẫn Setup Nginx trên AWS cho Django Backend",
     name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
+    title: "https://github.com/nguyenvuong1309/Blog/discussions/18",
   },
   {
-    quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
+    quote: "nginx reverse proxy http and load balancer",
     name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
+    title: "https://github.com/nguyenvuong1309/Blog/discussions/3",
   },
   {
-    quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
+    quote: "Docker + aws",
     name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
+    title: "https://github.com/nguyenvuong1309/Blog/discussions/6",
   },
   {
-    quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
+    quote: "Postgres with docker",
     name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
+    title: "https://github.com/nguyenvuong1309/Blog/discussions/8",
   },
 ];
 
