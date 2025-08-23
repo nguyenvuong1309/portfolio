@@ -1,10 +1,11 @@
 import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
-import { FaReact } from "react-icons/fa";
+import { FaReact, FaBriefcase } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
-import corpcommentImg from "@/public/corpcomment.png";
-import rmtdevImg from "@/public/rmtdev.png";
-import wordanalyticsImg from "@/public/wordanalytics.png";
+import { HiOfficeBuilding } from "react-icons/hi";
+import currencyConverterImg from "@/public/currency-converter.png";
+import chatAppImg from "@/public/chat-app.png";
+import hotelBookingImg from "@/public/hotel-booking.png";
 
 export const links = [
   {
@@ -28,6 +29,14 @@ export const links = [
     hash: "#experience",
   },
   {
+    name: "Education",
+    hash: "#education",
+  },
+  {
+    name: "Interests",
+    hash: "#interests",
+  },
+  {
     name: "Contact",
     hash: "#contact",
   },
@@ -35,73 +44,108 @@ export const links = [
 
 export const experiencesData = [
   {
-    title: "Graduated bootcamp",
-    location: "Miami, FL",
+    title: "University of Information Technology",
+    location: "Ho Chi Minh, Vietnam",
     description:
-      "I graduated after 6 months of studying. I immediately found a job as a front-end developer.",
+      "Currently pursuing Bachelor's degree in Cybersecurity. Maintaining GPA of 8.3/10 while gaining strong foundation in security principles and software development.",
     icon: React.createElement(LuGraduationCap),
-    date: "2019",
+    date: "Sep 2021 - Present",
   },
   {
-    title: "Front-End Developer",
-    location: "Orlando, FL",
+    title: "Full-Stack Developer (Contract)",
+    location: "Luxoasis Living",
     description:
-      "I worked as a front-end developer for 2 years in 1 job and 1 year in another job. I also upskilled to the full stack.",
-    icon: React.createElement(CgWorkAlt),
-    date: "2019 - 2021",
+      "Architected Django REST API backend for rental marketplace platform. Implemented HttpOnly cookie authentication, real-time chat features, and automated CI/CD pipelines with 80% reduction in deployment errors.",
+    icon: React.createElement(HiOfficeBuilding),
+    date: "May 2023 - Present",
   },
   {
-    title: "Full-Stack Developer",
-    location: "Houston, TX",
+    title: "Middle Full-Stack Developer",
+    location: "VGCORP",
     description:
-      "I'm now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB. I'm open to full-time opportunities.",
-    icon: React.createElement(FaReact),
-    date: "2021 - present",
+      "Led development of 5+ cross-platform mobile applications serving 5K+ active users. Implemented scalable MVVM architecture, reducing code complexity by 35%. Built comprehensive CI/CD pipelines reducing deployment time from 2 hours to 30 minutes.",
+    icon: React.createElement(FaBriefcase),
+    date: "Feb 2024 - Present",
   },
 ] as const;
 
 export const projectsData = [
   {
-    title: "CorpComment",
+    title: "Currency Converter App",
     description:
-      "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
-    tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
-    imageUrl: corpcommentImg,
+      "Native iOS currency conversion app built with SwiftUI implementing MVVM architecture and real-time exchange rates. Features 150+ currencies, historical rate tracking, and calculator interface.",
+    tags: ["SwiftUI", "Combine", "URLSession", "Core Data", "iOS 15+"],
+    imageUrl: currencyConverterImg,
+    githubUrl: "https://github.com/nguyenvuong1309/Currency-Converter",
+    liveUrl: undefined,
   },
   {
-    title: "rmtDev",
+    title: "Real-time Chat Application",
     description:
-      "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
-    tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
-    imageUrl: rmtdevImg,
+      "Production-ready real-time chat app with 2K+ test users using Flutter, Firebase Authentication, and Firestore. Comprehensive testing suite with 85%+ code coverage.",
+    tags: ["Flutter", "Firebase", "Dart", "GitHub Actions", "Fastlane"],
+    imageUrl: chatAppImg,
+    githubUrl: "https://github.com/nguyenvuong1309/flutter_firebase_chatapp",
+    liveUrl: undefined,
   },
   {
-    title: "Word Analytics",
+    title: "Full-Stack Hotel Booking Platform",
     description:
-      "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
-    tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
-    imageUrl: wordanalyticsImg,
+      "Complete booking platform handling 500+ properties with advanced search and filtering. Built scalable backend with Node.js and PostgreSQL, deployed on AWS with Docker.",
+    tags: ["React", "Node.js", "PostgreSQL", "Socket.io", "AWS", "Docker"],
+    imageUrl: hotelBookingImg,
+    githubUrl: "https://github.com/nguyenvuong1309/hotel_booking_client",
+    liveUrl: "https://hotel-booking-client-bice.vercel.app",
   },
 ] as const;
 
+export const educationData = [
+  {
+    title: "Bachelor's Degree in Cybersecurity",
+    institution: "University of Information Technology",
+    location: "Ho Chi Minh, Vietnam",
+    gpa: "8.3/10",
+    date: "Sep 2021 - Present",
+    description:
+      "Comprehensive studies in cybersecurity principles, software development, and information systems security.",
+  },
+] as const;
+
+export const interestsData = ["Music", "Sport", "Travel"] as const;
+
 export const skillsData = [
-  // "HTML",
-  // "CSS",
   "JavaScript",
   "TypeScript",
-  "React",
-  "Next.js",
-  "Node.js",
-  "Git",
-  "Tailwind",
-  // "Prisma",
-  "MongoDB",
-  "Redux",
-  // "GraphQL",
-  // "Apollo",
-  "Express",
-  "PostgreSQL",
   "Python",
+  "Swift",
+  "React",
+  "React Native",
+  "Next.js",
+  "SwiftUI",
+  "Redux",
+  "Zustand",
+  "HTML5",
+  "CSS3",
+  "Tailwind CSS",
   "Django",
-  "Framer M2otion",
+  "Django REST Framework",
+  "Node.js",
+  "PostgreSQL",
+  "MySQL",
+  "MongoDB",
+  "Firebase",
+  "Redis",
+  "SQLite",
+  "Docker",
+  "AWS",
+  "Cloudflare",
+  "GitHub Actions",
+  "Fastlane",
+  "Jest",
+  "Pytest",
+  "Git",
+  "Agile/Scrum",
+  "MVVM",
+  "RESTful APIs",
+  "CI/CD",
 ] as const;

@@ -18,31 +18,34 @@ export default function About() {
       id="about"
     >
       <SectionHeading>About me</SectionHeading>
+      {/* <p className="mb-3">
+        I'm currently pursuing a{" "}
+        <span className="font-medium">Bachelor's degree in Cybersecurity</span>{" "}
+        at the University of Information Technology in Ho Chi Minh City,
+        maintaining a <span className="font-medium">GPA of 8.3/10</span>. While
+        studying, I've been actively working as a{" "}
+        <span className="font-medium">Full-Stack Developer</span>, gaining
+        hands-on experience in building scalable applications.
+      </p> */}
+
       <p className="mb-3">
-        After graduating with a degree in{" "}
-        <span className="font-medium">Accounting</span>, I decided to pursue my
-        passion for programming. I enrolled in a coding bootcamp and learned{" "}
-        <span className="font-medium">full-stack web development</span>.{" "}
-        <span className="italic">My favorite part of programming</span> is the
-        problem-solving aspect. I <span className="underline">love</span> the
-        feeling of finally figuring out a solution to a problem. My core stack
-        is{" "}
-        <span className="font-medium">
-          React, Next.js, Node.js, and MongoDB
-        </span>
-        . I am also familiar with TypeScript and Prisma. I am always looking to
-        learn new technologies. I am currently looking for a{" "}
-        <span className="font-medium">full-time position</span> as a software
-        developer.
+        I specialize in{" "}
+        <span className="font-medium">React, React Native, Django</span>. My
+        expertise includes implementing{" "}
+        <span className="italic">CI/CD automation</span>, security best
+        practices like <span className="underline">HttpOnly cookies</span>, and
+        performance optimization. I've successfully delivered production
+        applications serving{" "}
+        <span className="font-medium">5K+ active users</span> and reduced
+        deployment times by <span className="font-medium">75%</span> through
+        automation.
       </p>
 
       <p>
-        <span className="italic">When I'm not coding</span>, I enjoy playing
-        video games, watching movies, and playing with my dog. I also enjoy{" "}
-        <span className="font-medium">learning new things</span>. I am currently
-        learning about{" "}
-        <span className="font-medium">history and philosophy</span>. I'm also
-        learning how to play the guitar.
+        <span className="italic">When I'm not coding</span>, I enjoy{" "}
+        <span className="font-medium">music, sports, and traveling</span>. I
+        believe in continuous learning and am always exploring new technologies
+        and methodologies to improve my craft as a developer.
       </p>
     </motion.section>
   );

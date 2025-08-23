@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import React from "react";
+import React, { useState } from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import { BsArrowRight, BsLinkedin } from "react-icons/bs";
@@ -9,10 +9,14 @@ import { HiDownload } from "react-icons/hi";
 import { FaGithubSquare } from "react-icons/fa";
 import { useSectionInView } from "@/lib/hooks";
 import { useActiveSectionContext } from "@/context/active-section-context";
+import avatar from "@/public/avatar.png";
+import ImageModal from "./image-modal";
+import Typewriter from "./typewritter";
 
 export default function Intro() {
   const { ref } = useSectionInView("Home", 0.5);
   const { setActiveSection, setTimeOfLastClick } = useActiveSectionContext();
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
   return (
     <section
@@ -31,13 +35,14 @@ export default function Intro() {
             }}
           >
             <Image
-              src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?fit=crop&w=368&h=368&q=100"
+              src={avatar}
               alt="Vuong portrait"
               width="192"
               height="192"
               quality="95"
               priority={true}
-              className="h-24 w-24 rounded-full object-cover border-[0.35rem] border-white shadow-xl"
+              className="h-24 w-24 rounded-full object-cover border-[0.35rem] border-white shadow-xl cursor-pointer hover:scale-105 transition-transform"
+              onClick={() => setIsModalOpen(true)}
             />
           </motion.div>
 
@@ -62,11 +67,26 @@ export default function Intro() {
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
       >
-        <span className="font-bold">Hello, I'm Vuong.</span> I'm a{" "}
-        <span className="font-bold">full-stack developer</span> with{" "}
-        <span className="font-bold">2 years</span> of experience. I enjoy
-        building <span className="italic">apps & websites</span>. My focus is{" "}
-        <span className="underline">React Native, React </span>.
+        <div>
+          <Typewriter
+            text="Hello, I'm Vuong. I'm a full-stack developer"
+            speed={80}
+            initialDelay={500}
+            loop={false}
+            className="font-bold"
+          />
+        </div>
+        <div>
+          with <span className="font-bold">3+ years</span> of experience
+          building scalable web and mobile applications. I specialize in{" "}
+          <span className="underline">
+            React Native, Django backend development
+          </span>
+          , and <span className="italic">cloud infrastructure</span>. I have
+          delivered{" "}
+          <span className="font-bold">2+ production applications</span> serving{" "}
+          <span className="font-bold">5K+ active users</span>.
+        </div>
       </motion.h1>
 
       <motion.div
@@ -100,7 +120,7 @@ export default function Intro() {
 
         <a
           className="bg-white p-4 text-gray-700 hover:text-gray-950 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
-          href="https://www.linkedin.com/in/vuong-nguyen-a2466a2a2/"
+          href="https://www.linkedin.com/in/vuong-nguyen-duc"
           target="_blank"
         >
           <BsLinkedin />
@@ -114,6 +134,14 @@ export default function Intro() {
           <FaGithubSquare />
         </a>
       </motion.div>
+
+      {/* Image Modal */}
+      <ImageModal
+        src={avatar.src}
+        alt="Vuong portrait"
+        isOpen={isModalOpen}
+        onClose={() => setIsModalOpen(false)}
+      />
     </section>
   );
 }
