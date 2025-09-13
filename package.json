@@ -7,10 +7,12 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "pages:build": "npx @cloudflare/next-on-pages"
+    "cf-build": "npm run build && npx @opennextjs/cloudflare",
+    "cf-deploy": "npm run cf-build && npx wrangler pages deploy .open-next/cloudflare-pages-build",
+    "deploy": "pnpm run build && npx @opennextjs/cloudflare"
   },
   "dependencies": {
-    "@cloudflare/next-on-pages": "^1.13.16",
+    "@opennextjs/cloudflare": "^1.8.2",
     "@react-email/components": "^0.4.0",
     "@react-email/tailwind": "^1.2.2",
     "@types/node": "24.2.0",
