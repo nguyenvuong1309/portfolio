@@ -7,9 +7,9 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "cf-build": "npm run build && npx @opennextjs/cloudflare",
-    "cf-deploy": "npm run cf-build && npx wrangler pages deploy .open-next/cloudflare-pages-build",
-    "deploy": "pnpm run build && npx @opennextjs/cloudflare"
+    "pages:build": "npx @cloudflare/next-on-pages",
+    "preview": "pnpm run pages:build && wrangler pages dev",
+    "deploy": "pnpm run build && pnpm run pages:build && wrangler pages deploy"
   },
   "dependencies": {
     "@opennextjs/cloudflare": "^1.8.2",

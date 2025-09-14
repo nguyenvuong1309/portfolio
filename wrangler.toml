@@ -1,7 +1,8 @@
 name = "porfolio"
 compatibility_date = "2025-09-13"
 compatibility_flags = ["nodejs_compat"]
-pages_build_output_dir = ".open-next/cloudflare-pages-build"
+pages_build_output_dir = ".vercel/output/static"
+
 
 # R2 binding cho incremental cache
 [[r2_buckets]]
