@@ -86,9 +86,8 @@ export default function Intro() {
             React Native, Django backend development
           </span>
           , and <span className="italic">cloud infrastructure</span>. I have
-          delivered{" "}
-          <span className="font-bold">2+ production applications</span> serving{" "}
-          <span className="font-bold">5K+ active users</span>.
+          delivered <span className="font-bold">a production application</span>{" "}
+          serving <span className="font-bold">5K+ active users</span>.
         </div>
       </motion.h1>
 
