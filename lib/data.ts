@@ -6,6 +6,18 @@ import { HiOfficeBuilding } from "react-icons/hi";
 import currencyConverterImg from "@/public/currency-converter.png";
 import chatAppImg from "@/public/chat-app.png";
 import hotelBookingImg from "@/public/hotel-booking.png";
+import luxoasisTeamImg from "@/public/images/luxoasis/lunch_time_luxoasis.jpeg";
+import uitGraduationImg from "@/public/images/uit/graduation.jpg";
+import vgcorpChristmas1 from "@/public/images/vgcorp/marry_chrismas.webp";
+import vgcorpChristmas2 from "@/public/images/vgcorp/marry_chrismas_2.jpg";
+import vgcorpBirthday1 from "@/public/images/vgcorp/nguyenvuong_happy_birthday.webp";
+import vgcorpBirthday2 from "@/public/images/vgcorp/nguyenvuong_happy_birthday_2.webp";
+import vgcorpParty1 from "@/public/images/vgcorp/year_end_party_1.jpeg";
+import vgcorpParty2 from "@/public/images/vgcorp/year_end_party_2.jpeg";
+import vgcorpParty3 from "@/public/images/vgcorp/year_end_party_3.jpeg";
+import vgcorpParty4 from "@/public/images/vgcorp/year_end_party_4.jpeg";
+import vgcorpParty5 from "@/public/images/vgcorp/year_end_party_5.jpeg";
+import vgcorpParty6 from "@/public/images/vgcorp/year_end_party_6.jpeg";
 
 export const links = [
   {
@@ -50,6 +62,7 @@ export const experiencesData = [
       "Currently pursuing Bachelor's degree in Cybersecurity. Maintaining GPA of 8.3/10 while gaining strong foundation in security principles and software development.",
     icon: React.createElement(LuGraduationCap),
     date: "Sep 2021 - Present",
+    images: [uitGraduationImg],
   },
   {
     title: "Full-Stack Developer (Contract)",
@@ -58,14 +71,27 @@ export const experiencesData = [
       "Architected Django REST API backend for rental marketplace platform. Implemented HttpOnly cookie authentication, real-time chat features, and automated CI/CD pipelines with 80% reduction in deployment errors.",
     icon: React.createElement(HiOfficeBuilding),
     date: "May 2023 - Present",
+    images: [luxoasisTeamImg],
   },
   {
     title: "Middle Full-Stack Developer",
     location: "VGCORP",
     description:
-      "Led development of 5+ cross-platform mobile applications serving 5K+ active users. Implemented scalable MVVM architecture, reducing code complexity by 35%. Built comprehensive CI/CD pipelines reducing deployment time from 2 hours to 30 minutes.",
+      "Participate in development of 5+ cross-platform mobile applications serving 5K+ active users. Built comprehensive CI/CD pipelines reducing deployment time from 2 hours to 30 minutes.",
     icon: React.createElement(FaBriefcase),
     date: "Feb 2024 - Present",
+    images: [
+      vgcorpParty1,
+      vgcorpParty2,
+      vgcorpParty3,
+      vgcorpParty4,
+      vgcorpParty5,
+      vgcorpParty6,
+      vgcorpChristmas1,
+      vgcorpChristmas2,
+      vgcorpBirthday1,
+      vgcorpBirthday2,
+    ],
   },
 ] as const;
 
