@@ -61,7 +61,7 @@ export const experiencesData = [
     description:
       "Currently pursuing Bachelor's degree in Cybersecurity. Maintaining GPA of 8.3/10 while gaining strong foundation in security principles and software development.",
     icon: React.createElement(LuGraduationCap),
-    date: "Sep 2021 - Present",
+    date: "Sep 2021 - Dec 2024",
     images: [uitGraduationImg],
   },
   {
@@ -131,7 +131,7 @@ export const educationData = [
     institution: "University of Information Technology",
     location: "Ho Chi Minh, Vietnam",
     gpa: "8.3/10",
-    date: "Sep 2021 - Present",
+    date: "Sep 2021 - Dec 2024",
     description:
       "Comprehensive studies in cybersecurity principles, software development, and information systems security.",
   },

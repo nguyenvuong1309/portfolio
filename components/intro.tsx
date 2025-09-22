@@ -7,16 +7,19 @@ import Link from "next/link";
 import { BsArrowRight, BsLinkedin } from "react-icons/bs";
 import { HiDownload } from "react-icons/hi";
 import { FaGithubSquare } from "react-icons/fa";
+import { BsEye } from "react-icons/bs";
 import { useSectionInView } from "@/lib/hooks";
 import { useActiveSectionContext } from "@/context/active-section-context";
 import avatar from "@/public/avatar.png";
 import ImageModal from "./image-modal";
+import PDFModal from "./pdf-modal";
 import Typewriter from "./typewritter";
 
 export default function Intro() {
   const { ref } = useSectionInView("Home", 0.5);
   const { setActiveSection, setTimeOfLastClick } = useActiveSectionContext();
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const [isPDFModalOpen, setIsPDFModalOpen] = useState(false);
 
   return (
     <section
@@ -109,6 +112,14 @@ export default function Intro() {
           <BsArrowRight className="opacity-70 group-hover:translate-x-1 transition" />
         </Link>
 
+        <button
+          className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10"
+          onClick={() => setIsPDFModalOpen(true)}
+        >
+          Preview CV{" "}
+          <BsEye className="opacity-60 group-hover:scale-110 transition" />
+        </button>
+
         <a
           className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10"
           href="/Nguyen_Duc_Vuong_CV.pdf"
@@ -141,6 +152,14 @@ export default function Intro() {
         alt="Vuong portrait"
         isOpen={isModalOpen}
         onClose={() => setIsModalOpen(false)}
+      />
+
+      {/* PDF Modal */}
+      <PDFModal
+        src="/Nguyen_Duc_Vuong_CV.pdf"
+        title="Nguyen Duc Vuong - CV"
+        isOpen={isPDFModalOpen}
+        onClose={() => setIsPDFModalOpen(false)}
       />
     </section>
   );
