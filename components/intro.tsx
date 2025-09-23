@@ -80,8 +80,8 @@ export default function Intro() {
           />
         </div>
         <div>
-          with <span className="font-bold">3+ years</span> of experience
-          building scalable web and mobile applications. I specialize in{" "}
+          with experience building scalable web and mobile applications. I
+          specialize in{" "}
           <span className="underline">
             React Native, Django backend development
           </span>
