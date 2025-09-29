@@ -70,7 +70,7 @@ export const experiencesData = [
     description:
       "Architected Django REST API backend for rental marketplace platform. Implemented HttpOnly cookie authentication, real-time chat features, and automated CI/CD pipelines with 80% reduction in deployment errors.",
     icon: React.createElement(HiOfficeBuilding),
-    date: "May 2023 - Present",
+    date: "Oct 2024 - Present",
     images: [luxoasisTeamImg],
   },
   {
