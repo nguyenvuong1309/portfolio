@@ -74,7 +74,7 @@ export const experiencesData = [
     images: [luxoasisTeamImg],
   },
   {
-    title: "Middle Full-Stack Developer",
+    title: "Full-Stack Developer",
     location: "VGCORP",
     description:
       "Participate in development of 5+ cross-platform mobile applications serving 5K+ active users. Built comprehensive CI/CD pipelines reducing deployment time from 2 hours to 30 minutes.",
@@ -161,17 +161,13 @@ export const skillsData = [
   "MongoDB",
   "Firebase",
   "Redis",
-  "SQLite",
   "Docker",
   "AWS",
   "Cloudflare",
   "GitHub Actions",
   "Fastlane",
-  "Jest",
-  "Pytest",
   "Git",
   "Agile/Scrum",
-  "MVVM",
   "RESTful APIs",
   "CI/CD",
 ] as const;
